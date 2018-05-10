@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -8,6 +8,11 @@ namespace GreenFox
         {
             // Create a program that writes this line 100 times:
             // "I won't cheat on the exam!"
+            for(int i = 1; i <= 100; i++)
+            {
+                Console.WriteLine(i + ">> I won't cheat on the exam!");
+            }
+            Console.ReadLine();
         }
     }
 }

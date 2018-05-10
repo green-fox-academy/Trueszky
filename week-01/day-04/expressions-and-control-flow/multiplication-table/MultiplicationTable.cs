@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -21,6 +21,14 @@ namespace GreenFox
             // 8 * 15 = 120
             // 9 * 15 = 135
             // 10 * 15 = 150
+            int num;
+            Console.WriteLine("Give me a number and i multiply it.(till 15)");
+            num = Int32.Parse(Console.ReadLine());
+            for (int i = 1; i <= 15; i++)
+            {
+                Console.WriteLine("{0} * {1} = "+ i*num,i,num);
+            }
+            Console.ReadLine();
         }
     }
 }

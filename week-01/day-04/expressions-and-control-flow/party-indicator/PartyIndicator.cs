@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -20,6 +20,29 @@ namespace GreenFox
             //
             // It should print: Sausage party
             // If no girls are coming, regardless the count of the people
+            int girls,boys;
+            Console.WriteLine("Give me the number of girls");
+            girls = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Give me the number of boys too");
+            boys = Convert.ToInt32(Console.ReadLine());
+            if (girls == boys && girls + boys >= 20)
+            {
+                Console.WriteLine("The party is exellent!");
+            }
+            else if (girls <= 0)
+            {
+                Console.WriteLine("Sausage party");
+            }
+            else if(girls != boys && girls + boys >= 20)
+            {
+                Console.WriteLine("Quite cool party!");
+            }
+            else if (girls + boys < 20)
+            {
+                Console.WriteLine("Varage party...");
+            }
+            
+            Console.ReadLine();
         }
     }
 }

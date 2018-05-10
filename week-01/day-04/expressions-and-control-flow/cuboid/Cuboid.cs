@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -11,6 +11,13 @@ namespace GreenFox
             //
             // Surface Area: 600
             // Volume: 1000
+            double sideA, sideB, sideC;
+            sideA = 5;
+            sideB = 3;
+            sideC = 4;
+            Console.WriteLine("Surface Area: " + ((sideA * sideB) + (sideC * sideB) + (sideA * sideC))*2);
+            Console.WriteLine("Volume: " + sideA * sideB * sideC +"m²");
+            Console.ReadLine();
         }
     }
 }

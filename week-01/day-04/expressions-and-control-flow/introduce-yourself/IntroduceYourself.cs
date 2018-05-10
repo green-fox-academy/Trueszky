@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -16,6 +16,10 @@ namespace GreenFox
             //  John Doe
             //  31
             //  1.87
+            Console.WriteLine("Hy, mz name is Andras ");
+            Console.WriteLine("Im 27 years old");
+            Console.WriteLine("and my height is 1.82" );
+            Console.ReadLine();
         }
     }
 }

@@ -1,6 +1,0 @@
-- case:  &id001
-    input: |
-    output: |
-      ^Hello, [a-zA-Z ]+$
-      ^Hello, [a-zA-Z ]+$
-      ^Hello, [a-zA-Z ]+$

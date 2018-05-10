@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -9,6 +9,11 @@ namespace GreenFox
             // Swap the values of the variables
             int a = 123;
             int b = 526;
+            int temp;
+            a = temp;
+            b = a;
+            temp = b;
+            
         }
     }
 }

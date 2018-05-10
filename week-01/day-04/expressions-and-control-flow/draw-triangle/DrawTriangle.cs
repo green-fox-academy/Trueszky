@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -15,6 +15,17 @@ namespace GreenFox
             // ****
             //
             // The triangle should have as many lines as the number was
+            int num;
+            num = Int32.Parse(Console.ReadLine());
+            for (int i =0 ; i <= num; i++)
+            {
+                for(int j=0;j<=i ;j++)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine(' ');
+            }
+            Console.ReadLine();
         }
     }
 }

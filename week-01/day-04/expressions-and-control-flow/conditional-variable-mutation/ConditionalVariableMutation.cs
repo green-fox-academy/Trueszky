@@ -1,6 +1,5 @@
 using System;
-
-namespace GreenFox
+namespace Trueszky
 {
     class Program
     {
@@ -9,16 +8,35 @@ namespace GreenFox
             double a = 24;
             int out = 0;
             // if a is even increment out by one
-
-            Console.WriteLine(out);
-
+            if (a % 2 == 0)
+            {
+                Console.WriteLine(out++);
+            }
+            else
+            {
+                Console.WriteLine(out);
+            }
+            
             int b = 13;
             string out2 = "";
             // if b is between 10 and 20 set out2 to "Sweet!"
             // if less than 10 set out2 to "Less!",
             // if more than 20 set out2 to "More!"
-
-            Console.WriteLine(out2);
+            if (10 < b && b < 20)
+            {
+                out2 = "Sweet!";
+                Console.WriteLine(out2);
+            }
+            else if (b < 10)
+            {
+                out2 = "Less!";
+                Console.WriteLine(out2);
+            }
+            else
+            {
+                out2 = "More!";
+                Console.WriteLine(out2);
+            }
 
             int c = 123;
             int credits = 100;
@@ -42,6 +60,7 @@ namespace GreenFox
             // otherwise set out3 to "Run Forest Run!"
 
             Console.WriteLine(out3);
+            Console.ReadLine();
         }
     }
 }

@@ -10,14 +10,14 @@ namespace Trueszky
             // then it should print the sum and the average of these numbers like:
             //
             // Sum: 22, Average: 4.4
-            int var=0, temp;
+            int var = 0;
             Console.WriteLine("Type here 5 integer: ");
-            for(int i=1; i <= 5; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                temp = Convert.ToInt32(Console.ReadLine());
-                var += temp;
+                 var += Convert.ToInt32(Console.ReadLine());
+                
             }
-            Console.WriteLine("Sum: " +var+" Avarage: "+var/5);
+            Console.WriteLine("Sum: " + var + " Avarage: " + var / 5);
             Console.ReadLine();
         }
     }

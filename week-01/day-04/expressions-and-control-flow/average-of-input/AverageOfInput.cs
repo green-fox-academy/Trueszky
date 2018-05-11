@@ -17,7 +17,7 @@ namespace Trueszky
                 temp = Convert.ToInt32(Console.ReadLine());
                 var += temp;
             }
-            Console.WriteLine("Sum: " +var+"Avarage: "+var/5);
+            Console.WriteLine("Sum: " +var+" Avarage: "+var/5);
             Console.ReadLine();
         }
     }

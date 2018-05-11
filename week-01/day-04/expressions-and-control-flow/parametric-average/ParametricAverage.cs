@@ -1,5 +1,4 @@
 using System;
-using System;
 
 namespace Trueszky
 {
@@ -13,16 +12,15 @@ namespace Trueszky
             // integers like:
             //
             // Sum: 22, Average: 4.4
-            int var = 0, temp,num=0;
+            int var, num = 0;
             Console.WriteLine("Give me a number ");
             var = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Type here that many integer: ");
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= var; i++)
             {
-                temp = Convert.ToInt32(Console.ReadLine());
-                num += temp;
+                num += Convert.ToInt32(Console.ReadLine());               
             }
-            Console.WriteLine("Sum: " + num + " Avarage: " + (num/var));
+            Console.WriteLine("Sum: " + num + "\r\nAvarage: " + (num / var));
             Console.ReadLine();
         }
     }

@@ -10,7 +10,13 @@ namespace AppendAFunc
             // - Write a function called `appendA` that gets a string as an input,
             //   appends an 'a' character to its end and returns with a string
             // - Print the result of `appendAFunc(am)`
+            string am = "kuty";
+            Console.WriteLine(appendA(am));
             Console.ReadLine();
+        }
+        static string appendA(string a)
+        {
+            return a+"a";
         }
     }
 }

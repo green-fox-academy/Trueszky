@@ -10,6 +10,13 @@ namespace Greet
             // - Create a function called `greet` that greets it's input parameter
             //     - Greeting is printing e.g. `Greetings dear, Greenfox`
             // - Greet `al`
+            string al = "Greenfox";
+            greet(al);
+            Console.ReadLine();
+        }
+        static void greet(string Greetedperson)
+        {
+            Console.WriteLine("'Greeatings dear, "+ Greetedperson);
         }
     }
 }

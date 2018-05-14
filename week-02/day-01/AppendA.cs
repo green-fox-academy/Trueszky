@@ -1,15 +1,22 @@
 using System;
 
-namespace AppendA
+namespace AppendAFunc
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // - Create an array variable named `nimals`
-            //   with the following content: `["kuty", "macsk", "cic"]`
-            // - Add all elements an `"a"` at the end
+            // - Create a string variable named `am` and assign the value `kuty` to it
+            // - Write a function called `appendA` that gets a string as an input,
+            //   appends an 'a' character to its end and returns with a string
+            // - Print the result of `appendAFunc(am)`
+            string am = "kuty";
+            Console.WriteLine(appendA(am));
             Console.ReadLine();
+        }
+        static string appendA(string a)
+        {
+            return a+"a";
         }
     }
 }

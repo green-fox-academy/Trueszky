@@ -7,13 +7,33 @@ namespace IsInList
     {
         public static void Main(string[] args)
         {
-            var list = new List<int>{2, 4, 6, 8, 10, 12, 14, 16};
+            var list = new List<int> { 2, 4, 6, 8, 10, 12, 14, 16 };
 
             // Check if list contains all of the following elements: 4,8,12,16
             // Create a method that accepts list as an input
             // it should return "true" if it contains all, otherwise "false"
             Console.WriteLine(CheckNums(list));
+            Console.ReadLine();
 
         }
+        public static bool CheckNums(List<int> x)
+        {
+            if (x.Contains(4))
+            {
+                if (x.Contains(8))
+                {
+                    if (x.Contains(12))
+                    {
+                        if (x.Contains(16))
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+                return false;
+            }
+            // MY MONSTER 
+        }
     }
-}
+

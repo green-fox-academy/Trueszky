@@ -1,14 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace SolarSystem
 {
     public class SolarSystem
     {
         public static void Main(string[] args)
-        { 
+        {
             var planetList = new List<string> { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Uranus", "Neptune" };
-        
+
 
             // Saturn is missing from the planetList
             // Insert it into the correct position
@@ -16,6 +17,19 @@ namespace SolarSystem
 
             Console.WriteLine(PutSaturn(planetList));
             // Expected output: "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Uranus", "Neptune", "Saturn"
+            Console.ReadLine();
+        }
+        public static string PutSaturn(List<String> nameList)
+        {
+            StringBuilder putSaturn = new StringBuilder();
+            nameList.Insert(nameList.IndexOf("Uranus"),"Saturn");
+            foreach(var name in nameList)
+            {
+                putSaturn.Append(name+", ");
+            }
+            
+            
+            return putSaturn.ToString();                 
         }
     }
 }

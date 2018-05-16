@@ -8,7 +8,7 @@ namespace HeWillNever
         public static void Main(string[] args)
         {
             string output = "";
-            int[] notSoCrypticMessage = {1, 12, 1, 2, 11, 1, 7, 11, 1, 49, 1, 3, 11, 1, 50, 11};
+            int[] notSoCrypticMessage = { 1, 12, 1, 2, 11, 1, 7, 11, 1, 49, 1, 3, 11, 1, 50, 11 };
 
             var map = new Dictionary<int, string>();
 
@@ -20,12 +20,16 @@ namespace HeWillNever
             map.Add(1, "Never gonna ");
             map.Add(11, "\n");
             map.Add(3, "say goodbye ");
-
+            for(int i = 0; i < notSoCrypticMessage.Length; i++)
+            {
+                Console.WriteLine(map.GetValueOrDefault(notSoCrypticMessage[i]));
+            }
             // Things are a little bit messed up
             // Your job is to decode the notSoCrypticMessage by using the hashmap as a look up table
             // Assemble the fragments into the out variable
 
             Console.WriteLine(output);
+            Console.ReadLine();
         }
     }
 }

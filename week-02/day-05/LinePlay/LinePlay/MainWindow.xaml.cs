@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace LinePlay
+{
+
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            var foxDraw = new FoxDraw(canvas);
+            Lines(foxDraw, 0, 0);
+        }
+        public static void Lines(FoxDraw foxDraw, double x, double y)
+        {
+            foxDraw.StrokeColor(Colors.ForestGreen);
+
+            for (int i = 0; i < 600; i += 25)
+            {
+                foxDraw.DrawLine(x+i,y,600,y+i,5);
+            }
+            foxDraw.StrokeColor(Colors.Purple);
+            for (int i = 0; i < 600; i += 25)
+            {
+                foxDraw.DrawLine(x , y+i, x+i,600, 5);
+            }
+        }
+    }
+}

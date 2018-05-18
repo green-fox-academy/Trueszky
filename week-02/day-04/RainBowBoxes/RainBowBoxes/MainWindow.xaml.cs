@@ -26,16 +26,16 @@ namespace RainBowBoxes
         {
             InitializeComponent();
             var foxDraw = new FoxDraw(canvas);
-            BoxesOfRainbow(foxDraw, 400, 222);
+            BoxesOfRainbow(foxDraw, 800, 1);
         }
         public static void BoxesOfRainbow(FoxDraw foxDraw, double x,byte y)
         {
             
             for(double i = 0; i <= x; i+=25)
             {
-                
-                foxDraw.FillColor(Color.FromRgb(y+=55,y+=35,y+=25));
-                foxDraw.StrokeColor(Color.FromRgb(y+=45,y-=255,y+=15));
+                //Fifty shades of grey   
+                foxDraw.FillColor(Color.FromRgb(y++,y++,y++));
+                foxDraw.StrokeColor(Color.FromRgb(y++,y++,y++));
                 foxDraw.DrawRectangle(400 - ((x-i) / 2), 225 - ((x-i)/ 2), x-(i), x-(i));
                 
             }

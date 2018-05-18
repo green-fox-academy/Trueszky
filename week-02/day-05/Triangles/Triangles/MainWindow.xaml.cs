@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LinePlay
+namespace Triangles
 {
 
     public partial class MainWindow : Window
@@ -22,21 +22,15 @@ namespace LinePlay
         {
             InitializeComponent();
             var foxDraw = new FoxDraw(canvas);
-            int pixelRange = 25;
-            Lines(foxDraw,pixelRange);
-        }
-        public static void Lines(FoxDraw foxDraw, int x)
-        {
-            foxDraw.StrokeColor(Colors.ForestGreen);
+            Triangles(foxDraw);
 
-            for (int i = 0; i < 600; i += 25)
+
+        }
+        public static void Triangles(FoxDraw foxDraw)
+        {
+            for (int i = 0; i < 3; i++)
             {
-                foxDraw.DrawLine(0+i,0,600,25+i,5);
-            }
-            foxDraw.StrokeColor(Colors.Purple);
-            for (int i = 0; i < 600; i += 25)
-            {
-                foxDraw.DrawLine(0 , 0+i, 25+i,600, 5);
+                foxDraw.
             }
         }
     }

@@ -25,7 +25,7 @@ namespace EnvelopeStar
         {
             InitializeComponent();
             var foxDraw = new FoxDraw(canvas);
-            int pixelRange = 600/64;
+            int pixelRange = 9;
             Starlines(foxDraw, pixelRange);
 
         }

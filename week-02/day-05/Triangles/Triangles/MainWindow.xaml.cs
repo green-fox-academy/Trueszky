@@ -21,26 +21,30 @@ namespace Triangles
         public MainWindow()
         {
             InitializeComponent();
-            int Size = 9;
+            int size = 80;
+            double tHeight = 20;
             var foxDraw = new FoxDraw(canvas);
-            Triangles(foxDraw,Size);
+            Triangles(canvas,foxDraw,size,tHeight);
 
 
         }
-        public static void Triangles(FoxDraw foxDraw,int size)
+        public static void Triangles(Canvas canvas,FoxDraw foxDraw,int size,double tHeight)
         {
-            int x = 300;
-            int y = 0;
+            double h = canvas.Height;
+            double w = canvas.Width;
+            w = w /2;
+            h = 0;
+            
             for (int i = 0; i <=size; i++)
             {               
                 for (int k=1;k<i;k++)
                 {
-                    foxDraw.DrawLine(x, y, x + 25, y + 50);
-                        foxDraw.DrawLine(x + 25, y + 50, x - 25, y + 50);
-                        foxDraw.DrawLine(x - 25, y + 50, x, y);
-                    foxDraw.DrawLine(x +=50, y, x, y);
+                    foxDraw.DrawLine(w, h, w + tHeight/2, h + tHeight);
+                        foxDraw.DrawLine(w + tHeight/2, h + tHeight, w - tHeight/2, h + tHeight);
+                        foxDraw.DrawLine(w - tHeight/2, h + tHeight, w, h);
+                    foxDraw.DrawLine(w +=tHeight, h, w, h);
                 }
-                foxDraw.DrawLine(x+=25-(50*i), y+=50, x, y);
+                foxDraw.DrawLine(w+=tHeight/2-(tHeight*i), h+=tHeight, w, h);
                 
             }
             

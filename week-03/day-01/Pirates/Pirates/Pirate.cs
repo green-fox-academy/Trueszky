@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace Pirates
 {
@@ -8,6 +9,15 @@ namespace Pirates
     {
         private int health = 1;
         public int rum = 0;
+        string name;
+        public string Names()
+        {
+            Random names = new Random();
+            string path = @"C:\Users\Tibuda\Documents\greenfoxos\munka\gites\Trueszky\week-03\day-01\Pirates\Pirates\NameList.txt";
+            string[] nameList = File.ReadAllLines(path);
+            this.name = nameList[names.Next(path.Length)];
+            return name;
+        }
         public string DrinkSomeRum()
         {
             if (health == 1)
@@ -58,12 +68,12 @@ namespace Pirates
             else if (chance <= 22 && chance > 11)
             {
                 pirate1.Die();
-                Console.WriteLine("meghalt 1 es " + chance);
+                Console.WriteLine(pirate1.name+" died whit a " + chance+"/33 chance");
             }
             else if (chance > 23)
             {
                 pirate2.Die();
-                Console.WriteLine("meghalt 2 es " + chance);
+                Console.WriteLine(pirate2.name+" died whit a " + chance + "/33 chance");
             }
         }
         public string Parrot()

@@ -7,14 +7,16 @@ namespace Pirates
         static void Main(string[] args)
         {
             Pirate pirate1 = new Pirate();
-            Pirate pirate2 = new Pirate();                
+            Pirate pirate2 = new Pirate();
+            pirate1.Names();
+            pirate2.Names();
             while (true)
             {
 
                 Pirate.Brawl(pirate1,pirate2);
 
-                Console.WriteLine(pirate1.Names()+": " + pirate1.HowsItGoingMate());
-                Console.WriteLine(pirate2.Names() + ": " + pirate2.HowsItGoingMate());
+                Console.WriteLine(pirate1.name +": " + pirate1.HowsItGoingMate());
+                Console.WriteLine(pirate2.name + ": " + pirate2.HowsItGoingMate());
                 Console.ReadLine();
             }
             Console.ReadLine();

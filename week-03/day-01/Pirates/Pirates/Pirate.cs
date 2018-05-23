@@ -9,13 +9,13 @@ namespace Pirates
     {
         private int health = 1;
         public int rum = 0;
-        string name;
+        public string name;
         public string Names()
         {
             Random names = new Random();
             string path = @"C:\Users\Tibuda\Documents\greenfoxos\munka\gites\Trueszky\week-03\day-01\Pirates\Pirates\NameList.txt";
             string[] nameList = File.ReadAllLines(path);
-            this.name = nameList[names.Next(path.Length)];
+            name = nameList[names.Next(path.Length)];
             return name;
         }
         public string DrinkSomeRum()

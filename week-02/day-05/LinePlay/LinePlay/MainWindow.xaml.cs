@@ -22,21 +22,21 @@ namespace LinePlay
         {
             InitializeComponent();
             var foxDraw = new FoxDraw(canvas);
-            int pixelRange = 25;
+            int pixelRange = 80;
             Lines(foxDraw,pixelRange);
         }
         public static void Lines(FoxDraw foxDraw, int x)
         {
             foxDraw.StrokeColor(Colors.ForestGreen);
 
-            for (int i = 0; i < 600; i += 25)
+            for (int i = 0; i < 600; i += x)
             {
                 foxDraw.DrawLine(0+i,0,600,25+i,5);
             }
             foxDraw.StrokeColor(Colors.Purple);
-            for (int i = 0; i < 600; i += 25)
+            for (int i = 0; i < 600; i += x)
             {
-                foxDraw.DrawLine(0 , 0+i, 25+i,600, 5);
+                foxDraw.DrawLine(0 , 0+i, x+i,600, 5);
             }
         }
     }

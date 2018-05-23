@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyFiles", "CopyFiles\CopyFiles.csproj", "{398F5236-22A5-4B9A-9FD0-EE26C70CE0DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pirates", "Pirates\Pirates.csproj", "{76DA93CD-C049-4809-BE85-FD8E972978A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{398F5236-22A5-4B9A-9FD0-EE26C70CE0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{398F5236-22A5-4B9A-9FD0-EE26C70CE0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{398F5236-22A5-4B9A-9FD0-EE26C70CE0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{398F5236-22A5-4B9A-9FD0-EE26C70CE0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DA93CD-C049-4809-BE85-FD8E972978A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DA93CD-C049-4809-BE85-FD8E972978A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DA93CD-C049-4809-BE85-FD8E972978A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DA93CD-C049-4809-BE85-FD8E972978A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {98B3E295-7171-4F15-8FAE-AC19F12EC764}
+		SolutionGuid = {426BDA05-F205-4507-A509-3DEB68FA44CA}
 	EndGlobalSection
 EndGlobal

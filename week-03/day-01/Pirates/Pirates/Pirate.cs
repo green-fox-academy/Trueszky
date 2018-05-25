@@ -80,7 +80,11 @@ namespace Pirates
         {
             string color = "colorfull";
             double height = 1.84;
-            return "I'm a PARROT HAaaRRGH " ;
+            if (health==1)
+            {
+            return " Parrot: I'm a PARROT HAaaRRGH ";
+            }
+            return " You killed tha parrot too.... Really?";
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Pirates
                     }
                 }
             }
-            return ;
+            return  "";
         }
 
     }

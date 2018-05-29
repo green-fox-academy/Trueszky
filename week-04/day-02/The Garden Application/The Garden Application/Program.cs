@@ -6,7 +6,10 @@ namespace The_Garden_Application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Garden Eden = new Garden();
+            Eden.Watering(90);
+            Console.WriteLine(Eden.WaterVolume);
+            Console.ReadLine();
         }
     }
 }

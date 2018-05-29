@@ -6,8 +6,8 @@ namespace GreenFoxInheritanceExercise
 {
     public class Student : Person
     {
-        public string previousOrganization;
-        public int skippedDays = 0;
+        private string previousOrganization;
+        private int skippedDays = 0;
 
         public Student(string name, int age, string gender, string previousOrganization) : base(name, age, gender)
         {

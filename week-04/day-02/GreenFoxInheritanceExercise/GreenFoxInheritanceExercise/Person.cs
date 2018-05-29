@@ -6,9 +6,9 @@ namespace GreenFoxInheritanceExercise
 {
     public class Person
     {
-        public string name;
-        public int age;
-        public string gender;
+        protected string name;
+        protected int age;
+        protected string gender;
 
         public virtual string Introduce()
         {

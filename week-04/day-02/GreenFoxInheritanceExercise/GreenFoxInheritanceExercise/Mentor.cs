@@ -6,7 +6,7 @@ namespace GreenFoxInheritanceExercise
 {
     public class Mentor : Person
     {
-        public string level;
+        private string level;
         public Mentor(string name, int age, string gender, string level) : base(name, age, gender)
         {
             this.level = level;

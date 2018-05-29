@@ -6,9 +6,9 @@ namespace GreenFoxInheritanceExercise
 {
     public class Cohort
     {
-        public string name;
-        public List<Student> students;
-        public List<Mentor> mentors;
+        private string name;
+        private List<Student> students;
+        private List<Mentor> mentors;
         public Cohort(string name)
         {
             this.name = name;

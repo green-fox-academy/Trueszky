@@ -6,8 +6,8 @@ namespace GreenFoxInheritanceExercise
 {
      public class Sponsor : Person
     {
-        public string company;
-        public int hiredStudents=0;
+        private string company;
+        private int hiredStudents=0;
         public Sponsor(string name, int age, string gender, string company) : base(name, age, gender)
         {
             this.company = company;

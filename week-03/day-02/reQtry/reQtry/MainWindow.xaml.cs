@@ -21,23 +21,24 @@ namespace reQtry
             InitializeComponent();
             var foxDraw = new FoxDraw(canvas);
             List<Point> points = new List<Point>();
-            double size = 9;
-            points.Add(new Point(0, 0));
+            double size =99;
             points.Add(new Point(canvas.Width, canvas.Height));
             for (int i = 0; i < size; i++)
             {
-                for (int k=0;k<i;k++)
+                for (int k=0;k<4;k++)
                 {
-                    points.Add(new Point();
-                    points.Add(new Point();
+                points.Add(new Point(points[i].X - points[i].X, points[i].Y));
+                points.Add(new Point(points[i].X - points[i].X, points[i].Y - points[i].Y));
+                points.Add(new Point(points[i].X , points[i].Y - points[i].Y));
+                points.Add(new Point(points[i].X, points[i].Y));
+                    points.Add(new Point(points[i].X - points[i].X / 3, points[i].Y - points[i].Y / 3));
+
                 }
+                points.Add(new Point(points[i].X - points[i].X/ 3, points[i].Y-points[i].Y/3));
             }
-            for (int j = 0; j < size; j+=3)
+            for (int j = 0; j < 4*size - 1; j++)
             {
-                foxDraw.DrawLine(points[j], points[j + 2]);
-                foxDraw.DrawLine(points[j], points[j + 3]);
-                foxDraw.DrawLine(points[j + 2], points[j + 1]);
-                foxDraw.DrawLine(points[j + 3], points[j + 1]);
+                foxDraw.DrawLine(points[j], points[j + 1]);
             }
         }
 
@@ -45,6 +46,11 @@ namespace reQtry
         {
             if (volume == 0)
             {
+
+            }
+            else
+            {
+
             }
 
         }

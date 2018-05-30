@@ -11,9 +11,9 @@ namespace AnimalsInTheZoo
             var bird = new Bird("Parrot", 4, "female");
 
             Console.WriteLine("Who want a baby?");
-            Console.WriteLine(reptile.GetName() + ", " + reptile.WantChild());
-            Console.WriteLine(mammal.GetName() + ", " + mammal.WantChild());
-            Console.WriteLine(bird.GetName() + ", " + bird.WantChild());
+            Console.WriteLine(reptile.Greet() + ", "+reptile.GetName() + ", " + reptile.WantChild());
+            Console.WriteLine(mammal.Greet() + ", "+mammal.GetName() + ", " + mammal.WantChild());
+            Console.WriteLine(bird.Greet()+", "+bird.GetName() + ", " + bird.WantChild());
             Console.ReadLine();
         }
     }

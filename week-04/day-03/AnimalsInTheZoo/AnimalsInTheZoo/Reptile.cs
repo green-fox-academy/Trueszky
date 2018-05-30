@@ -15,11 +15,6 @@ namespace AnimalsInTheZoo
             return Name;
         }
 
-        public override string Greet()
-        {
-            return string.Format($"Hi, my name is {Name}, I'm {Age} old {Gender}");
-        }
-
         public override string WantChild()
         {
             return "want a child from an egg";

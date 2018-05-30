@@ -10,7 +10,7 @@ namespace AnimalsInTheZoo
         private string name;
         private int age;
         private string gender;
-        public Animal(string name,int age,string gender)
+        public Animal(string name, int age, string gender)
         {
             this.name = name;
             this.age = age;
@@ -18,8 +18,8 @@ namespace AnimalsInTheZoo
         }
         public string Name
         {
-            get 
-                {
+            get
+            {
                 return name;
             }
         }
@@ -37,10 +37,13 @@ namespace AnimalsInTheZoo
                 return gender;
             }
         }
-        public abstract string Greet();
+        public string Greet()
+        {
+            return string.Format($"Hi, my name is {Name}, I'm {Age} old {Gender}");
+        }
         public abstract string GetName();
         public abstract string WantChild();
-        
+
 
     }
 

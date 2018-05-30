@@ -4,7 +4,11 @@ using System.Text;
 
 namespace The_Garden_Application
 {
-    class Tree
+    class Tree : Garden
     {
+        public Tree(string color) : base(color)
+        {
+            numberOfGreens++;
+        }
     }
 }

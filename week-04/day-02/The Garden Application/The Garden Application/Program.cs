@@ -8,7 +8,7 @@ namespace The_Garden_Application
         {
             Garden Eden = new Garden();
             Eden.Watering(90);
-            Console.WriteLine(Eden.WaterVolume);
+            Console.WriteLine(Eden.);
             Console.ReadLine();
         }
     }

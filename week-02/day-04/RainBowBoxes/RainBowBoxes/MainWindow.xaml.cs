@@ -30,12 +30,12 @@ namespace RainBowBoxes
         }
         public static void BoxesOfRainbow(FoxDraw foxDraw, double x,byte y)
         {
-            
-            for(double i = 0; i <= x; i+=25)
+            byte z = 122;
+            for(double i = 0; i <= x; i+=5)
             {
                 //Fifty shades of grey   
-                foxDraw.FillColor(Color.FromRgb(y++,y++,y++));
-                foxDraw.StrokeColor(Color.FromRgb(y++,y++,y++));
+                foxDraw.FillColor(Color.FromRgb(z+=y, y+=45,(byte)i));
+                foxDraw.StrokeColor(Color.FromRgb(22,y+=5,159));
                 foxDraw.DrawRectangle(400 - ((x-i) / 2), 225 - ((x-i)/ 2), x-(i), x-(i));
                 
             }

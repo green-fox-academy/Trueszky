@@ -7,14 +7,21 @@ namespace The_Garden_Application
     class Garden
     {
         private string color;
-        private int waterVolume=0;
+        protected static int waterVolume = 0;
+        protected static int numberOfGreens = 0;
+        protected static int whoNeedWater = 0;
         public Garden()
         {
-            
+
         }
-        public int Watering(int volume)
+        public Garden(string color)
         {
-            return waterVolume += volume;
+            this.color = color;
+        }
+        public string Watering(int volume)
+        {
+            waterVolume += volume;
+            return string.Format("Watering with " + volume);
         }
         public int WaterVolume
         {
@@ -22,6 +29,15 @@ namespace The_Garden_Application
             {
                 return waterVolume;
             }
+
+        }
+        public int GetInfo()
+        {
+            if (Flower.waterVolume <= 4)
+            {
+                return whoNeedWater++;
+            }
+            return 0;
         }
     }
 }

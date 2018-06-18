@@ -372,6 +372,9 @@ ASALocalRun/
 *.su
 *.idb
 *.pdb
+*.layout
+*.depend
+*.chp
 
 # Kernel Module Compile Results
 *.mod*

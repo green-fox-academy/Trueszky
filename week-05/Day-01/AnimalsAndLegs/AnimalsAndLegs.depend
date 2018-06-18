@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1529336110 source:c:\users\tibuda\documents\greenfoxos\munka\gites\trueszky\week-05\day-01\animalsandlegs\main.c
+	<stdio.h>
+	<stdlib.h>
+

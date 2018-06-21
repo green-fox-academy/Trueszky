@@ -49,50 +49,54 @@ int main()
     // print it the array in descending order
     // delete the arrays after you don't use them
     int i;
-    int *pa =(int *)malloc(10*sizeof(int));
-    int *pb =(int *)malloc(10*sizeof(int));
+    int *even =(int *)malloc(12*sizeof(int));
+    int *odd =(int *)malloc(12*sizeof(int));
     int *temp;
+
     for (i=0;i<10;i++)
         {
-            pa[i]=i*2;
+            even[i]=i*2;
         }
 
     for (i=0;i<10;i++)
         {
-            pb[i]=i*2+1;
+            odd[i]=i*2+1;
         }
-    temp = pa;
-        for (i=0;i<10;i++)
+
+    temp = even;
+
+    for (i=0;i<10;i++)
         {
             printf("%d\t",temp[i]);
         }
         printf("\n\n");
-    pa = (int *)realloc(pa,20*sizeof(int));
 
-            for (i=0;i<10;i++)
+    even = (int *)realloc(even,20*sizeof(int));
+
+    for (i=0;i<10;i++)
         {
-            printf("%d\t",pa[i]);
+            printf("%d\t",temp[i]);
         }
         printf("\n\n");
     for (i=0;i<20;i++)
         {
             if (i%2==0)
             {
-            pa[i]=pb[9-i/2];
+            even[i]=odd[9-i/2];
             }
             else
             {
-            pa[i]=temp[9-i/2];
+            even[i]=temp[9-i/2];
             }
         }
     for (i=0;i<20;i++)
         {
-            printf("%d\n",pa[i]);
+            printf("%d\n",even[i]);
         }
 
 
-    free(pa);
-    free(pb);
+    free(even);
+    free(odd);
     free(temp);
 
 

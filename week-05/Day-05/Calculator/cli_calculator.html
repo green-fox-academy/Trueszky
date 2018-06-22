@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="command-line-calculator">Command Line Calculator</h1>
+<p><em>Create a bigger program</em></p>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Read and interpret user stories</li>
+<li>Create a bigger project</li>
+</ul>
+<h2 id="materials--resources">Materials &amp; Resources</h2>
+<ul>
+<li><a href="https://www.tutorialspoint.com/c_standard_library/string_h.htm">string.h</a></li>
+</ul>
+<h2 id="workshop">Workshop</h2>
+<p>This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a <a href="#help-for-the-positioning">little bit of help</a>.</p>
+<h3 id="basics-mandatory-tasks">Basics (mandatory) tasks</h3>
+<ul>
+<li><a href="#user-content-summation">+</a></li>
+<li><a href="#user-content-subtraction">-</a></li>
+<li><a href="#user-content-multiplication">*</a></li>
+<li><a href="#user-content-division">/</a></li>
+<li><a href="#user-content-division-with-remainder">%</a></li>
+<li><a href="#user-content-squaring">squaring</a></li>
+<li><a href="#user-content-square-root">square root</a></li>
+<li><a href="#user-content-logarithm">logarithm</a></li>
+<li><a href="#user-content-binto">binary to</a></li>
+<li><a href="#user-content-hexto">hexadecimal to</a></li>
+<li><a href="#user-content-decto">decimal to</a></li>
+<li><a href="#user-content-error-handling">error handling</a></li>
+</ul>
+<h3 id="advanced-tasks">Advanced tasks</h3>
+<p>Implement a function to calculate the <a href="https://en.wikipedia.org/wiki/Nth_root"><code>n</code>th roots.</a></p>
+<h3 id="print-usage">Print usage</h3>
+<ul>
+<li>At application startup the following message should be shown:</li>
+</ul>
+<pre><code>	CLI Calculator
+====================================
+usage: [number] [operation] [number]
+Commands:
+
+ +	summation
+ -	subtraction
+ *	multiplication
+ /	division
+ %	division with remainder
+ ^	squaring
+ &lt;	square root
+ log	logarithm
+ binto	binary to hex or dec
+ hexto	hexadecimal to bin or dec
+ decto	decimal to bin or hex
+ ====================================
+ exit	exiting from the program
+ clear	clear the screen
+ help	print usage
+ ====================================
+ Hit enter to start!
+ ====================================
+</code></pre>
+<h3 id="summation">summation</h3>
+<p>For example the content is:</p>
+<pre><code>3 + 2 = 5
+</code></pre>
+<h3 id="subtraction">subtraction</h3>
+<p>For example the content is:</p>
+<pre><code>3 - 2 = 1
+</code></pre>
+<h3 id="multiplication">multiplication</h3>
+<p>For example the content is:</p>
+<pre><code>3 * 2 = 6
+</code></pre>
+<h3 id="division">division</h3>
+<p>For example the content is:</p>
+<pre><code>6 / 2 = 3
+</code></pre>
+<h3 id="squaring">squaring</h3>
+<p>For example the content is:</p>
+<pre><code>3 ^ 2 = 9
+</code></pre>
+<h3 id="square-root">square root</h3>
+<p>For example the content is:</p>
+<pre><code>2 &lt; 4 = 2
+</code></pre>
+<h3 id="division-with-remainder">division with remainder</h3>
+<p>For example the content is:</p>
+<pre><code>3 % 2 = 1
+</code></pre>
+<h3 id="logarithm">logarithm</h3>
+<p>For example the content is:</p>
+<pre><code>2log8 = 3
+</code></pre>
+<h3 id="binto">binto</h3>
+<p>For example the content is:</p>
+<pre><code>0110 binto 10 = 6
+</code></pre>
+<h3 id="hexto">hexto</h3>
+<p>For example the content is:</p>
+<pre><code>aa hexto 10 = 170
+</code></pre>
+<h3 id="decto">decto</h3>
+<p>For example the content is:</p>
+<pre><code>13 decto 2 = 1101
+</code></pre>
+<h3 id="error-handling">error handling</h3>
+<p>For example the content is:</p>
+<pre><code>5 / 0 = Division by zero is undefined.
+</code></pre>
+<p>if you give incorrect operators (alphabetic characters), you should see:</p>
+<pre><code>a + b = Invalid operands.
+</code></pre>
+<p>if you leave out spaces, or use an unknown operator, like @, you should get:</p>
+<pre><code>5 + @
+Invalid command
+Hit enter to continue.
+</code></pre>
+<hr>
+<h3 id="help-for-the-positioning">help for the positioning</h3>
+<p>Some help for the positioning of the cursor in order to see the result in the same row as the operands in Windows (you have to include Windows.h):</p>
+<pre><code>COORD coord = {0,0};
+void set_cursor_pos(int x, int y)
+{
+	coord.X = x;
+	coord.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+</code></pre>
+<p>positioning the console cursor in Linux or OSX:</p>
+<pre><code>void set_cursor_pos(int x, int y)
+{
+	printf("\033[%d;%dH", y+1, x+1);
+}
+</code></pre>
+</div>
+</body>
+
+</html>

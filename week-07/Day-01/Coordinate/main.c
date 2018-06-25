@@ -9,12 +9,12 @@ int main()
     // Fill up the coordinates in the array with random number.
     int j;
     int i=0;
-    coordinate tomb[10];
-    for(j=0;j<10;j++) {
+    coordinate tomb[15];
+    for(j=0;j<sizeof(tomb)/sizeof(tomb[0]);j++) {
     int r=rand()%99;
         tomb[j].x=r;
     }
-    for(j=0;j<10;j++) {
+    for(j=0;j<sizeof(tomb)/sizeof(tomb[0]);j++) {
     int r=rand()%99;
         tomb[j].y=r;
     }

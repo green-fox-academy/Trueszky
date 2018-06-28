@@ -1,6 +1,1 @@
-0	valami
-1	valami
-2	valami
-3	valami
-4	valami
-5	valami
+0	emberek

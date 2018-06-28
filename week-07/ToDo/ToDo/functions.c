@@ -133,13 +133,13 @@ void array_maker()
     int j;
     FILE *tasks = fopen("tasklist.txt","r+");
     char *tomb;
-    tomb = (char *)calloc(k,sizeof(char));
+    tomb = (char *)malloc(k*sizeof(char));
     j=0;
-    for(j=0;getc(tasks)!=EOF;j++) {
-        tomb[j]=getc(tasks);
+    for(j=0;fgetc(tasks)!=NULL;j++) {
+        tomb[j]=fgetc(tasks);
     }
     j=0;
-    while(tomb!='\n') {
+    while(tomb[j]!='\n') {
         printf("%c",tomb[j]);
         j++;
     }

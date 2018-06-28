@@ -57,7 +57,6 @@ int main()
 void help()
 {
     char sztring[50];
-    int i;
     FILE *path = fopen("help.txt","r");
     while (fgets(sztring,50,path)!=NULL)
     {

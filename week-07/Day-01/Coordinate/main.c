@@ -11,12 +11,8 @@ int main()
     int i=0;
     coordinate tomb[15];
     for(j=0;j<sizeof(tomb)/sizeof(tomb[0]);j++) {
-    int r=rand()%99;
-        tomb[j].x=r;
-    }
-    for(j=0;j<sizeof(tomb)/sizeof(tomb[0]);j++) {
-    int r=rand()%99;
-        tomb[j].y=r;
+        tomb[j].x=rand()%99;;
+        tomb[j].y=rand()%99;;
     }
 
 

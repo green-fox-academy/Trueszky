@@ -135,7 +135,7 @@ void array_maker()
     char *tomb;
     tomb = (char *)malloc(k*sizeof(char));
     j=0;
-    for(j=0;fgetc(tasks)!=NULL;j++) {
+    for(j=0;feof(tasks)!=NULL;j++) {
         tomb[j]=fgetc(tasks);
     }
     j=0;
